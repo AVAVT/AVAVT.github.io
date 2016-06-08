@@ -6,8 +6,8 @@
 </description>
     <link>http://avavt.github.io/</link>
     <atom:link href="http://avavt.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 08 Jun 2016 17:15:21 +0700</pubDate>
-    <lastBuildDate>Wed, 08 Jun 2016 17:15:21 +0700</lastBuildDate>
+    <pubDate>Wed, 08 Jun 2016 17:32:31 +0700</pubDate>
+    <lastBuildDate>Wed, 08 Jun 2016 17:32:31 +0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -223,7 +223,7 @@
 
 &lt;p&gt;Coding convention là thứ mà khi bạn học lập trình trường nào, lớp nào cũng dạy các bạn. Nhưng có 1 cái quan trọng nhất các trường lớp lại thường không dạy, đó là “tại sao” lại cần làm thế.&lt;/p&gt;
 
-&lt;p&gt;Bởi vì không biết tại sao, nên hầu hết mọi người đều không hiểu được tầm quan trọng của coding convention, dẫn tới coi nhẹ nó. Cái câu trích dân ở trên, đợi tý để tôi quote lại to đẹp đóng khung lên nhìn cho dễ:&lt;/p&gt;
+&lt;p&gt;Bởi vì không biết tại sao, nên hầu hết mọi người đều không hiểu được tầm quan trọng của coding convention, dẫn tới coi nhẹ nó. Cái câu trích dẫn ở trên, đợi tý để tôi quote lại to đẹp đóng khung lên nhìn cho dễ:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;“Ờ thì nói chung là em có theo, chỉ có đoạn này đang em test thử có chạy không nên để tạm thế thôi”&lt;/p&gt;
