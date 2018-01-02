@@ -1,0 +1,27 @@
+.animate_fade{
+	transition: opacity .7s ease-out, transform .7s ease-out;
+	position: relative;
+}
+
+.fade_up_off,
+.fade_left_off,
+.fade_right_off,
+.fade_scale_off{
+	opacity: 0;
+}
+
+.fade_up_off{
+	transform: translate(0, 50px);
+}
+
+.fade_right_off{
+	transform: translate(-50px, 0);
+}
+
+.fade_left_off{
+	transform: translate(50px, 0);
+}
+
+.fade_scale_off{
+	transform: scale(0.5,0.5);
+}

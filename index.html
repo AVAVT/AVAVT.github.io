@@ -1,126 +1,342 @@
-<!DOCTYPE html>
-<html>
+﻿<!doctype html>
+<html lang="en" ng-app="vatCSSApp">
 
-  <head>
+<head>
+  <title>AVAVT's Place</title>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>AVAVT&#39;s nth attempt at blogging</title>
-  <meta name="description" content="This is where I share my thoughts on programming, technologies and life in generals. Posts are either in Vietnamese or English.
-">
+  <!-- CSS Libs -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&subset=latin,latin-ext,vietnamese" rel="stylesheet"
+    type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://avavt.github.io/">
-  <link rel="alternate" type="application/rss+xml" title="AVAVT's nth attempt at blogging" href="http://avavt.github.io/feed.xml">
+  <!-- CSS #self -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/fadeIn.css">
 
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+  <!-- JS Libs -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"></script>
+
+  <!-- JS #self -->
+  <script src="js/core.js"></script>
+  <script src="js/scrollSpy.js"></script>
 </head>
 
-
-  <body>
-
-    <header class="site-header">
-
-  <div class="wrapper">
-
-    <a class="site-title" href="/">AVAVT's nth attempt at blogging</a>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-
-      <div class="trigger">
-        
-          
-          <a class="page-link" href="/about/">About</a>
-          
-        
-          
-        
-          
-        
-          
-        
-      </div>
-    </nav>
-
-  </div>
-
-</header>
-
-
-    <div class="page-content">
-      <div class="wrapper">
-        <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Jun 8, 2016</span>
-
-        <h2>
-          <a class="post-link" href="/blog/tech/2016/06/08/5-viec-don-gian-co-the-khien-ban-ngay-lap-tuc-tro-thanh-mot-lap-trinh-vien-hieu-qua-part-2.html">5 việc đơn giản có thể khiến bạn ngay lập tức trở thành một lập trình viên hiệu quả (Phần 2)</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jun 1, 2016</span>
-
-        <h2>
-          <a class="post-link" href="/blog/tech/2016/06/01/5-viec-don-gian-co-the-khien-ban-ngay-lap-tuc-tro-thanh-mot-lap-trinh-vien-hieu-qua-part-1.html">5 việc đơn giản có thể khiến bạn ngay lập tức trở thành một lập trình viên hiệu quả (Phần 1)</a>
-        </h2>
-      </li>
-    
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-
-</div>
-
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1 class="fade_left">Hi, I'm Đức.</h1>
+        </div>
       </div>
     </div>
-
-    <footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">AVAVT's nth attempt at blogging</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li><a href="www.vatcss.info">www.vatcss.info</a></li>
-          <li><a href="mailto:itsavavt@gmail.com">itsavavt@gmail.com</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          
-
-          
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>This is where I share my thoughts on programming, technologies and life in generals. Posts are either in Vietnamese or English.
-</p>
+  </header>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <p>My full name is Tôn Hồng Đức, but most people call me by my alias
+            <abbr title="abbreviated &quot;VAT&quot;. Yes, the tax.">AVAVT</abbr>.</p>
+          <p>I'm a Vietnamese
+            <a href="https://en.wikipedia.org/wiki/Go_%28game%29" title="Go on Wikipedia" target="_blank">Go</a> player, indie game developer and programming instructor.</p>
+          <p>I've been doing programming works since 2008 with specialization in visualization, animations and simulations.</p>
+          <p>You can see some of my recent works below.</p>
+          <p>I also answer <a href="http://stackoverflow.com/users/1645830/av-avt" title="AVAVT profile on Stackoverflow" target="_blank">Stackoverflow</a> questions in my free time.</p>
+        </div>
       </div>
     </div>
+  </section>
 
-  </div>
+  <section class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="row">
+            <div class="col-sm-2">
+              <img class="avatar" alt="avatar" src="img/avatar.png" />
+            </div>
+            <div class="col-sm-10 contact_media">
+              <p>
+                <a href="mailto:itsavavt@gmail.com" title="Send email to itsavavt@gmail.com">itsavavt@gmail.com</a>
+              </p>
+              <p class="social">
+                <a href="http://stackoverflow.com/users/1645830/av-avt" title="AVAVT profile on Stackoverflow" target="_blank" class="fa fa-stack-overflow">
+                  <span class="sr-only">Stackoverflow profile</span>
+                </a>
+                </a>
+                <a href="https://github.com/AVAVT?tab=repositories" title="AVAVT on GitHub" target="_blank" class="fa fa-github">
+                  <span class="sr-only">GitHub profile</span>
+                </a>
+                <a href="https://vn.linkedin.com/in/duc-ton-hong-6a207578" title="Linkedin - Duc Ton Hong" target="_blank" class="fa fa-linkedin-square">
+                  <span class="sr-only">Linkedin profile</span>
+                </a>
+                <a href="skype:avavt_?chat" title="Chat with avavt_" class="fa fa-skype">
+                  <span class="sr-only">Skype name</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</footer>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <p>At this time, I'm working freelance and prefer remote works on my own PC, because front-end development greatly
+            benefits from hardware setup - multiple displays of various resolutions and qualities - which most clients find
+            difficult to provide on-site.</p>
+          <p>I'm particularly interested in projects that I can later refer to as my work, because my portfolio is already full
+            of top-secret, non-disclosable projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div id="works" class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h2 class="section_title">Things I've made</h2>
+          <ul class="works">
+            <!-- Phaeria -->
+            <li class="row">
+              <div class="col-sm-4">
+                <a href="https://avavt.itch.io/phaerias-mine" title="Phaeria's Mine" target="_blank" class="work_thumbnail fade_scale">
+                  <img src="img/phaeria.gif" />
+                </a>
+              </div>
+              <div class="col-sm-8 fade_left">
+                <h3>
+                  <a href="https://avavt.itch.io/phaerias-mine" title="Phaeria's Mine" target="_blank">Phaeria's Mine</a>
+                </h3>
+                <p>"Tavern" Defense game that focus on resource management and macro strategy.</p>
+                <p>This is my entry for Ludumdare 40. The theme of the jam was: The more you have, the worse it is.</p>
+              </div>
+            </li>
 
+            <!-- Johi -->
+            <li class="row">
+              <div class="col-sm-4">
+                <a href="https://avavt.itch.io/johi-farm" title="Johi Farm" target="_blank" class="work_thumbnail fade_scale">
+                  <img src="img/JohiFarm.gif" />
+                </a>
+              </div>
+              <div class="col-sm-8 fade_left">
+                <h3>
+                  <a href="https://avavt.itch.io/johi-farm" title="Johi Farm" target="_blank">Johi Farm</a>
+                </h3>
+                <p>Kid-friendly action platformer.</p>
+                <p>This is my entry for Ludumdare 38. The theme of the jam was: Small Worlds.</p>
+              </div>
+            </li>
 
-  </body>
+            <!-- Techkids -->
+            <li class="row">
+              <div class="col-sm-4">
+                <a href="http://techkids.vn/" title="TechKids - Coding School" target="_blank" class="work_thumbnail fade_scale">
+                  <img src="img/techkids_preview.png" />
+                </a>
+              </div>
+              <div class="col-sm-8 fade_left">
+                <h3>
+                  <a href="http://techkids.vn/" title="TechKids - Coding School" target="_blank">TechKids.vn</a>
+                </h3>
+                <p>Original design &amp; code scaffolding of the main site for TechKids Coding School - where I'm serving as
+                  an instructor.</p>
+                <p>Actual website was completed and maintained by the school's graduates.</p>
+              </div>
+            </li>
+
+            <hr>
+
+            <!-- Snake -->
+            <li class="row">
+              <div class="col-sm-4">
+                <a href="http://www.vatcss.info/games/applesofeden/" title="Apples of Eden" target="_blank" class="work_thumbnail fade_scale">
+                  <img src="http://www.vatcss.info/games/applesofeden/img/AppFeature.png" />
+                </a>
+              </div>
+              <div class="col-sm-8 fade_left">
+                <h3>
+                  <a href="http://www.vatcss.info/games/applesofeden/" title="Apples of Eden" target="_blank">Apples of Eden</a>
+                </h3>
+                <p>A tribute to the mobile classic Snake.</p>
+                <p>An action puzzle game where you guide Little Snake around the ever-changing garden maze of Eden.</p>
+                <p>Featuring an innovative gameplay for classic concept.</p>
+                <p>
+                  <a href="https://itunes.apple.com/us/app/apples-of-eden/id1097047784?ls=1&mt=8" title="Apples of Eden on the App Store" target="_blank"
+                    class="fa fa-apple"></a>
+                  <a href="https://play.google.com/store/apps/details?id=its.avavt.applesofeden" title="Apples of Eden on Google Play" target="_blank"
+                    class="fa fa-android"></a>
+                </p>
+              </div>
+            </li>
+
+            <hr>
+
+            <!-- Monument -->
+            <li class="row">
+              <div class="col-sm-4">
+                <a href="http://monumentgenerator.com" title="Monument Generator" target="_blank" class="work_thumbnail fade_scale">
+                  <img src="img/monuments_preview.png" />
+                </a>
+              </div>
+              <div class="col-sm-8 fade_left">
+                <h3>
+                  <a href="http://monumentgenerator.com" title="Monument Generator" target="_blank">Monument Generator</a>
+                </h3>
+                <p>Generate random colorful monuments onclick/idle.</p>
+              </div>
+            </li>
+
+            <hr>
+
+            <!-- g0tStats -->
+            <li class="row">
+              <div class="col-sm-4">
+                <a href="http://vatcss.info/games/gotstats/" title="g0t Stats?" target="_blank" class="work_thumbnail fade_scale">
+                  <img src="img/gotstats_preview.png" />
+                </a>
+              </div>
+              <div class="col-sm-8 fade_left">
+                <h3>
+                  <a href="http://vatcss.info/games/gotstats/" title="g0t Stats?" target="_blank">g0tStats?</a>
+                </h3>
+                <p>Analytic tool for
+                  <a href="http://online-go.com" title="The best place to play Go online!" target="_blank">Online Go Server</a>. Provides interesting (I hope) statistics about a player on OGS.</p>
+                <p>Source code is available on
+                  <a href="https://github.com/AVAVT/g0tStats" title="g0t Stats?" target="_blank">GitHub</a>.</p>
+              </div>
+            </li>
+
+            <hr>
+
+            <!-- PAU -->
+            <li class="row">
+              <div class="col-sm-4">
+                <a href="http://www.slidedb.com/games/pau-catch-me" title="Pau, catch me! on SlideDB" class="work_thumbnail fade_scale">
+                  <img src="img/pau_preview.png" alt="Pau, catch me! preview" />
+                </a>
+              </div>
+              <div class="col-sm-8 fade_left">
+                <h3>
+                  <a href="http://www.slidedb.com/games/pau-catch-me" title="Pau, catch me! on SlideDB">Pau, catch me!</a>
+                </h3>
+                <p>A cute little endless runner game for iOS &amp; Android made with Unity. I would say this is my first success
+                  in game making, especially the art style.</p>
+                <p>
+                  <a href="https://itunes.apple.com/vn/app/pau-catch-me!/id1064857183?mt=8" title="Pau, catch me! on the App Store" target="_blank"
+                    class="fa fa-apple"></a>
+                  <a href="https://play.google.com/store/apps/details?id=co.utagames.descent" title="Pau, catch me! on Google Play" target="_blank"
+                    class="fa fa-android"></a>
+                </p>
+              </div>
+            </li>
+
+            <hr>
+
+            <!-- REAC -->
+            <li class="row">
+              <div class="col-sm-4">
+                <a href="https://itunes.apple.com/us/app/reac-color-domino/id983983062?mt=8" title="REAC - Color Domino on the App Store"
+                  class="work_thumbnail fade_scale">
+                  <img src="img/reac_preview.png" alt="REAC preview" />
+                </a>
+              </div>
+              <div class="col-sm-8 fade_left">
+                <h3>
+                  <a href="https://itunes.apple.com/us/app/reac-color-domino/id983983062?mt=8" title="REAC - Color Domino on the App Store">REAC - Color Domino</a>
+                </h3>
+                <p>A puzzle game based on color &amp; changes. The game is quite difficult and I would say it's not for everyone.</p>
+                <p>
+                  <a href="https://itunes.apple.com/us/app/reac-color-domino/id983983062?mt=8" title="REAC - Color Domino on the App Store"
+                    target="_blank" class="fa fa-apple"></a>
+                </p>
+              </div>
+            </li>
+
+            <hr>
+
+            <!-- CHINA -->
+            <li class="row">
+              <div class="col-sm-4">
+                <a href="https://itunes.apple.com/us/app/china-scanner-detect-products/id953014113?mt=8" title="China Scanner on the App Store"
+                  target="_blank" class="work_thumbnail fade_scale">
+                  <img src="img/china_preview.png" / alt="China scanner preview">
+                </a>
+              </div>
+              <div class="col-sm-8 fade_left">
+                <h3>
+                  <a href="https://itunes.apple.com/us/app/china-scanner-detect-products/id953014113?mt=8" title="China Scanner on the App Store"
+                    target="_blank">China Scanner</a>
+                </h3>
+                <p>Barcode scanner that can tell you which country the product comes from, so you can avoid getting swindled
+                  by the retailer.</p>
+                <p>
+                  <a href="https://itunes.apple.com/us/app/china-scanner-detect-products/id953014113?mt=8" title="China Scanner on the App Store"
+                    target="_blank" class="fa fa-apple"></a>
+                </p>
+              </div>
+            </li>
+
+            <hr>
+
+            <!-- AMPYA -->
+            <li class="row">
+              <div class="col-sm-4">
+                <a href="http://ampya.com/" title="AMPYA" target="_blank" class="work_thumbnail fade_scale">
+                  <img src="img/ampya_preview.png" / alt="AMPYA music player">
+                </a>
+              </div>
+              <div class="col-sm-8 fade_left">
+                <h3>
+                  <a href="http://ampya.com/" title="AMPYA" target="_blank">AMPYA Music Player</a>
+                </h3>
+                <p>This is one big project. My team only worked on the online music player subdomain. I made the UI while another
+                  guy made the music player.</p>
+              </div>
+            </li>
+
+            <hr>
+
+            <!-- PONG -->
+            <li class="row">
+              <div class="col-sm-4">
+                <a href="http://www.vatcss.info/games/pong/" title="Pong!" target="_blank" class="work_thumbnail fade_scale">
+                  <img src="img/pong_preview.png" alt="Pong preview" />
+                </a>
+              </div>
+              <div class="col-sm-8 fade_left">
+                <h3>
+                  <a href="http://www.vatcss.info/games/pong/" title="Pong!" target="_blank">Pong!</a>
+                </h3>
+                <p>Who doesn't like Pong?</p>
+                <p>Back in 2011 HTML &lt;canvas&gt; was quite hot, and people started thinking about making games with HTML5.
+                  I joined the trend and this was the result. Not too bad I'd say. I still play it from time to time.</p>
+              </div>
+            </li>
+          </ul>
+          <p>For the full list of my past works, please see my
+            <a href="https://vn.linkedin.com/in/duc-ton-hong-6a207578" title="Linkedin - Duc Ton Hong"
+              target="_blank">Linkedin profile.</a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+  </footer>
+</body>
 
 </html>
