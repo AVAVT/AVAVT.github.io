@@ -1,15 +1,15 @@
-TechKidsApp.scrollSpy = (function($, undefined){
+TechKidsApp.scrollSpy = (function ($, undefined) {
 
 	var configs = {
 		skinWidth: 100,
-		animateClasses : [
+		animateClasses: [
 			"fade_up",
 			"fade_left",
 			"fade_right",
 			"fade_scale",
 		],
-		animateOffSuffix : "_off",
-		animateTransitionClass : "animate_fade"
+		animateOffSuffix: "_off",
+		animateTransitionClass: "animate_fade"
 	}
 
 	var scrollThrotte = false;
@@ -19,17 +19,17 @@ TechKidsApp.scrollSpy = (function($, undefined){
 	/*
 	 * Public functions
 	 */
-	var init = function(){
+	var init = function () {
 		$(window).bind("resize", calculateViewportHeight);
 		calculateViewportHeight();
-		$(".navbar_at_top").each(function(){
+		$(".navbar_at_top").each(function () {
 			gotNav = true;
 		});
 
 		initFadeElements();
 
-		if(gotFade){
-			$(window).bind("scroll",scrollSpy);
+		if (gotFade) {
+			$(window).bind("scroll", scrollSpy);
 			setTimeout(lateInitFadeElements, 100);
 		}
 	}
@@ -38,32 +38,31 @@ TechKidsApp.scrollSpy = (function($, undefined){
 	/*
 	 * Private functions
 	 */
-	var calculateViewportHeight = function(){
+	var calculateViewportHeight = function () {
 		viewportHeight = $(window).height() - configs.skinWidth;
-		if(viewportHeight < 0) viewportHeight = 0;
+		if (viewportHeight < 0) viewportHeight = 0;
 	}
 
-	var scrollSpy = function(){
-		if(scrollThrotte) return;
+	var scrollSpy = function () {
+		if (scrollThrotte) return;
 		scrollThrotte = true;
-		setTimeout(function(){scrollThrotte = false}, 100);
+		setTimeout(function () { scrollThrotte = false }, 100);
 
 		// Fades
-		if(gotFade){
-			configs.animateClasses.forEach(function(theClass){
-				$("."+ theClass + configs.animateOffSuffix).each(function(){
-					if($(this).offset().top > $(window).scrollTop() && $(this).offset().top < $(window).scrollTop() + viewportHeight){
-						$(this).removeClass(theClass + configs.animateOffSuffix);
+		if (gotFade) {
+			configs.animateClasses.forEach(function (fadeClassName) {
+				$(`.${fadeClassName}${configs.animateOffSuffix}:not('hide')`).each(function () {
+					if ($(this).offset().top > $(window).scrollTop() && $(this).offset().top < $(window).scrollTop() + viewportHeight) {
+						$(this).removeClass(fadeClassName + configs.animateOffSuffix);
 					}
 				});
 			});
 		}
-
 	}
 
-	var initFadeElements = function(){
-		configs.animateClasses.forEach(function(theClass){
-			$("."+theClass).each(function(){
+	var initFadeElements = function () {
+		configs.animateClasses.forEach(function (theClass) {
+			$("." + theClass).each(function () {
 				$(this).addClass(theClass + configs.animateOffSuffix);
 
 				$(this).removeClass(theClass);
@@ -73,9 +72,9 @@ TechKidsApp.scrollSpy = (function($, undefined){
 		});
 	}
 
-	var lateInitFadeElements = function(){
-		configs.animateClasses.forEach(function(theClass){
-			$("."+ theClass + configs.animateOffSuffix).each(function(){
+	var lateInitFadeElements = function () {
+		configs.animateClasses.forEach(function (theClass) {
+			$("." + theClass + configs.animateOffSuffix).each(function () {
 				$(this).addClass(configs.animateTransitionClass);
 			});
 		});

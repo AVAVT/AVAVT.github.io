@@ -1,0 +1,96 @@
+{
+  "items": [
+    {
+      "title": "House by the bay",
+      "category": "archviz",
+      "link": "https://drive.google.com/open?id=1elSx8_-iZOn-2yp97uwcGPGcInDsFK6S",
+      "preview": "img/housebythebay.png",
+      "description": "<p>Interactive archviz demo, user can walk around & change interior of the room.</p>",
+      "platforms": [
+        "windows",
+        "apple"
+      ]
+    },
+    {
+      "title": "Archery Progress",
+      "category": "app",
+      "link": "https://itunes.apple.com/us/app/archery-progress/id1192658385?mt=8",
+      "preview": "img/archery.png",
+      "description": "<p>Simple, hassle-free apps for archery scorekeeping.</p>",
+      "platforms": [
+        "apple",
+        "android"
+      ]
+    },
+    {
+      "title": "Phaeria's Mine",
+      "category": "game",
+      "link": "https://avavt.itch.io/phaerias-mine",
+      "preview": "img/phaeria.png",
+      "description": "<p>\"Tavern\" Defense game that focus on resource management and macro strategy.</p><p>This is my entry for Ludumdare 40. The theme of the jam was: The more you have, the worse it is.</p>",
+      "platforms": [
+        "windows",
+        "apple",
+        "chrome"
+      ]
+    },
+    {
+      "title": "Nest Floormap",
+      "category": "archviz",
+      "link": "https://avavt.itch.io/nest-floormap",
+      "preview": "img/nestspace.png",
+      "description": "<p>Floormap of Nest Co-working space. Display real time information for navigation, room usage & events.</p>"
+    },
+    {
+      "title": "TechKids - Coding School",
+      "category": "app",
+      "link": "http://techkids.vn/",
+      "preview": "img/techkids_preview.png",
+      "description": "<p>Original design &amp; code scaffolding of the main site for TechKids Coding School - where I'm serving as an instructor.</p><p>Actual website was completed and maintained by the school's graduates.</p>"
+    },
+    {
+      "title": "Monument Generator",
+      "category": "archviz",
+      "link": "http://monumentgenerator.com",
+      "preview": "img/monuments_preview.png",
+      "description": "<p>Generate random colorful monuments onclick/idle.</p>"
+    },
+    {
+      "title": "Johi Farm",
+      "category": "game",
+      "link": "https://avavt.itch.io/johi-farm",
+      "preview": "img/JohiFarm.gif",
+      "description": "<p>Kid-friendly action platformer.</p><p>This is my entry for Ludumdare 38. The theme of the jam was: Small Worlds.</p>",
+      "platforms": [
+        "windows",
+        "apple",
+        "chrome"
+      ]
+    },
+    {
+      "title": "g0t Stats?",
+      "category": "app",
+      "link": "http://avavt.github.io/g0tStats/",
+      "preview": "img/gotstats_preview.png",
+      "description": "<p>Analytic tool for <a href=\"http://online-go.com\" title=\"The best place to play Go online!\" target=\"_blank\">Online Go Server</a>. Provides interesting (I hope) statistics about a player on OGS.</p>"
+    },
+    {
+      "title": "Apples of Eden",
+      "category": "game",
+      "link": "http://www.vatcss.info/games/applesofeden/",
+      "preview": "http://www.vatcss.info/games/applesofeden/img/AppFeature.png",
+      "description": "<p>A tribute to the mobile classic Snake.</p><p>An action puzzle game where you guide Little Snake around the ever-changing garden maze of Eden.</p><p>Featuring an innovative gameplay for classic concept.</p>",
+      "platforms": [
+        "apple",
+        "android"
+      ]
+    },
+    {
+      "title": "Game jam projects",
+      "category": "game",
+      "link": "https://avavt.itch.io",
+      "preview": "img/games.png",
+      "description": "<p>Personal games I made. Mostly during weeken game jams.</p>"
+    }
+  ]
+}

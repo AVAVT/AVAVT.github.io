@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html lang="en" ng-app="vatCSSApp">
+<html lang="en">
 
 <head>
   <title>AVAVT's Place</title>
@@ -46,10 +46,13 @@
           <p>My full name is Tôn Hồng Đức, but most people call me by my alias
             <abbr title="abbreviated &quot;VAT&quot;. Yes, the tax.">AVAVT</abbr>.</p>
           <p>I'm a Vietnamese
-            <a href="https://en.wikipedia.org/wiki/Go_%28game%29" title="Go on Wikipedia" target="_blank">Go</a> player, indie game developer and programming instructor.</p>
-          <p>I've been doing programming works since 2008 with specialization in visualization, animations and simulations. You can see some of my recent works below.</p>
+            <a href="https://en.wikipedia.org/wiki/Go_%28game%29" title="Go on Wikipedia" target="_blank">Go</a>
+            player, indie game developer and programming instructor.</p>
+          <p>I've been doing programming works since 2008 with specialization in visualization, animations and
+            simulations. You can see some of my recent works below.</p>
           <p>I also answer
-            <a href="http://stackoverflow.com/users/1645830/av-avt" title="AVAVT profile on Stackoverflow" target="_blank">Stackoverflow</a> questions in my free time.</p>
+            <a href="http://stackoverflow.com/users/1645830/av-avt" title="AVAVT profile on Stackoverflow" target="_blank">Stackoverflow</a>
+            questions in my free time.</p>
         </div>
       </div>
     </div>
@@ -94,13 +97,19 @@
   </section>
 
   <section>
-    <div id="works" class="container">
+    <div id="works_container" class="container">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
           <h2 class="section_title">Things I've made</h2>
-          <ul class="works">
+          <ul class="tabs">
+            <li class="works_tab active" data-category="all">All</li>
+            <li class="works_tab" data-category="archviz">Visualizations</li>
+            <li class="works_tab" data-category="game">Games</li>
+            <li class="works_tab" data-category="app">Applications & Web</li>
+          </ul>
+          <ul id="works" class="works">
             <!-- Phaeria -->
-            <li class="row">
+            <li class="row works_item category_game">
               <div class="col-sm-4">
                 <a href="https://avavt.itch.io/phaerias-mine" title="Phaeria's Mine" target="_blank" class="work_thumbnail fade_scale">
                   <img src="img/phaeria.png" />
@@ -125,7 +134,7 @@
             <hr>
 
             <!-- Johi -->
-            <li class="row">
+            <li class="row works_item category_game">
               <div class="col-sm-4">
                 <a href="https://avavt.itch.io/johi-farm" title="Johi Farm" target="_blank" class="work_thumbnail fade_scale">
                   <img src="img/JohiFarm.gif" />
@@ -150,7 +159,7 @@
             <hr>
 
             <!-- Techkids -->
-            <li class="row">
+            <li class="row works_item category_app">
               <div class="col-sm-4">
                 <a href="http://techkids.vn/" title="TechKids - Coding School" target="_blank" class="work_thumbnail fade_scale">
                   <img src="img/techkids_preview.png" />
@@ -160,7 +169,8 @@
                 <h3>
                   <a href="http://techkids.vn/" title="TechKids - Coding School" target="_blank">TechKids.vn</a>
                 </h3>
-                <p>Original design &amp; code scaffolding of the main site for TechKids Coding School - where I'm serving as
+                <p>Original design &amp; code scaffolding of the main site for TechKids Coding School - where I'm
+                  serving as
                   an instructor.</p>
                 <p>Actual website was completed and maintained by the school's graduates.</p>
               </div>
@@ -169,7 +179,7 @@
             <hr>
 
             <!-- Snake -->
-            <li class="row">
+            <li class="row works_item category_game">
               <div class="col-sm-4">
                 <a href="http://www.vatcss.info/games/applesofeden/" title="Apples of Eden" target="_blank" class="work_thumbnail fade_scale">
                   <img src="http://www.vatcss.info/games/applesofeden/img/AppFeature.png" />
@@ -177,16 +187,19 @@
               </div>
               <div class="col-sm-8 fade_left">
                 <h3>
-                  <a href="http://www.vatcss.info/games/applesofeden/" title="Apples of Eden" target="_blank">Apples of Eden</a>
+                  <a href="http://www.vatcss.info/games/applesofeden/" title="Apples of Eden" target="_blank">Apples of
+                    Eden</a>
                 </h3>
                 <p>A tribute to the mobile classic Snake.</p>
                 <p>An action puzzle game where you guide Little Snake around the ever-changing garden maze of Eden.</p>
                 <p>Featuring an innovative gameplay for classic concept.</p>
                 <p>
-                  <a href="https://itunes.apple.com/us/app/apples-of-eden/id1097047784?ls=1&mt=8" title="Apples of Eden on the App Store" target="_blank">
+                  <a href="https://itunes.apple.com/us/app/apples-of-eden/id1097047784?ls=1&mt=8" title="Apples of Eden on the App Store"
+                    target="_blank">
                     <i class="fab fa-apple"></i>
                   </a>
-                  <a href="https://play.google.com/store/apps/details?id=its.avavt.applesofeden" title="Apples of Eden on Google Play" target="_blank">
+                  <a href="https://play.google.com/store/apps/details?id=its.avavt.applesofeden" title="Apples of Eden on Google Play"
+                    target="_blank">
                     <i class="fab fa-android"></i>
                   </a>
                 </p>
@@ -196,7 +209,7 @@
             <hr>
 
             <!-- Monument -->
-            <li class="row">
+            <li class="row works_item category_archviz">
               <div class="col-sm-4">
                 <a href="http://monumentgenerator.com" title="Monument Generator" target="_blank" class="work_thumbnail fade_scale">
                   <img src="img/monuments_preview.png" />
@@ -213,7 +226,7 @@
             <hr>
 
             <!-- g0tStats -->
-            <li class="row">
+            <li class="row works_item category_app">
               <div class="col-sm-4">
                 <a href="http://vatcss.info/games/gotstats/" title="g0t Stats?" target="_blank" class="work_thumbnail fade_scale">
                   <img src="img/gotstats_preview.png" />
@@ -224,7 +237,8 @@
                   <a href="http://vatcss.info/games/gotstats/" title="g0t Stats?" target="_blank">g0tStats?</a>
                 </h3>
                 <p>Analytic tool for
-                  <a href="http://online-go.com" title="The best place to play Go online!" target="_blank">Online Go Server</a>. Provides interesting (I hope) statistics about a player on OGS.</p>
+                  <a href="http://online-go.com" title="The best place to play Go online!" target="_blank">Online Go
+                    Server</a>. Provides interesting (I hope) statistics about a player on OGS.</p>
                 <p>Source code is available on
                   <a href="https://github.com/AVAVT/g0tStats" title="g0t Stats?" target="_blank">GitHub</a>.</p>
               </div>
@@ -233,7 +247,7 @@
             <hr>
 
             <!-- REAC -->
-            <li class="row">
+            <li class="row works_item category_game">
               <div class="col-sm-4">
                 <a href="https://itunes.apple.com/us/app/reac-color-domino/id983983062?mt=8" title="REAC - Color Domino on the App Store"
                   class="work_thumbnail fade_scale">
@@ -242,9 +256,11 @@
               </div>
               <div class="col-sm-8 fade_left">
                 <h3>
-                  <a href="https://itunes.apple.com/us/app/reac-color-domino/id983983062?mt=8" title="REAC - Color Domino on the App Store">REAC - Color Domino</a>
+                  <a href="https://itunes.apple.com/us/app/reac-color-domino/id983983062?mt=8" title="REAC - Color Domino on the App Store">REAC
+                    - Color Domino</a>
                 </h3>
-                <p>A puzzle game based on color &amp; changes. The game is quite difficult and I would say it's not for everyone.</p>
+                <p>A puzzle game based on color &amp; changes. The game is quite difficult and I would say it's not for
+                  everyone.</p>
                 <p>
                   <a href="https://itunes.apple.com/us/app/reac-color-domino/id983983062?mt=8" title="REAC - Color Domino on the App Store"
                     target="_blank">
@@ -256,7 +272,8 @@
           </ul>
 
           <p>For the full list of my past works, please see my
-            <a href="https://vn.linkedin.com/in/duc-ton-hong-6a207578" title="Linkedin - Duc Ton Hong" target="_blank">Linkedin profile.</a>
+            <a href="https://vn.linkedin.com/in/duc-ton-hong-6a207578" title="Linkedin - Duc Ton Hong" target="_blank">Linkedin
+              profile.</a>
           </p>
 
         </div>
