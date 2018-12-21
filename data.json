@@ -1,28 +1,6 @@
 {
   "items": [
     {
-      "title": "House by the bay",
-      "category": "archviz",
-      "link": "https://drive.google.com/open?id=1elSx8_-iZOn-2yp97uwcGPGcInDsFK6S",
-      "preview": "img/housebythebay.png",
-      "description": "<p>Interactive archviz demo, user can walk around & change interior of the room.</p>",
-      "platforms": [
-        "windows",
-        "apple"
-      ]
-    },
-    {
-      "title": "Archery Progress",
-      "category": "app",
-      "link": "https://itunes.apple.com/us/app/archery-progress/id1192658385?mt=8",
-      "preview": "img/archery.png",
-      "description": "<p>Simple, hassle-free apps for archery scorekeeping.</p>",
-      "platforms": [
-        "apple",
-        "android"
-      ]
-    },
-    {
       "title": "Phaeria's Mine",
       "category": "game",
       "link": "https://avavt.itch.io/phaerias-mine",
@@ -42,11 +20,33 @@
       "description": "<p>Floormap of Nest Co-working space. Display real time information for navigation, room usage & events.</p>"
     },
     {
+      "title": "Archery Progress",
+      "category": "app",
+      "link": "https://itunes.apple.com/us/app/archery-progress/id1192658385?mt=8",
+      "preview": "img/archery.png",
+      "description": "<p>Simple, hassle-free apps for archery scorekeeping.</p>",
+      "platforms": [
+        "apple",
+        "android"
+      ]
+    },
+    {
       "title": "TechKids - Coding School",
       "category": "app",
       "link": "http://techkids.vn/",
       "preview": "img/techkids_preview.png",
       "description": "<p>Original design &amp; code scaffolding of the main site for TechKids Coding School - where I'm serving as an instructor.</p><p>Actual website was completed and maintained by the school's graduates.</p>"
+    },
+    {
+      "title": "House by the bay",
+      "category": "archviz",
+      "link": "https://drive.google.com/open?id=1elSx8_-iZOn-2yp97uwcGPGcInDsFK6S",
+      "preview": "img/housebythebay.png",
+      "description": "<p>Interactive archviz demo, user can walk around & change interior of the room.</p>",
+      "platforms": [
+        "windows",
+        "apple"
+      ]
     },
     {
       "title": "Monument Generator",
