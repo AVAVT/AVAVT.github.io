@@ -16,7 +16,7 @@ h1,h2,h3,h4,h5{
 }
 
 hr {
-	border-top: 1px solid #fdb628;
+	border-top: 1px solid #378369;
 	margin: 20px 0;
 }
 
@@ -26,7 +26,7 @@ a{
 
 a:hover,
 a:focus{
-	color: #fdb628;
+	color: #378369;
 	outline: 0 none;
 	text-decoration: none;
 }
@@ -134,7 +134,7 @@ ul.works li h3{
 .works_tab.active,
 .works_tab:hover{
 	color: #333333;
-	border-bottom: 1px solid #fdb628;
+	border-bottom: 1px solid #378369;
 }
 
 @media screen and (min-width: 768px){

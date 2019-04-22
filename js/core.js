@@ -1,45 +1,45 @@
 var TechKidsApp = (function ($, undefined) {
-	var init = function () {
-		if (TechKidsApp.scrollSpy) {
-			TechKidsApp.scrollSpy.init();
-		}
+  var init = function () {
+    if (TechKidsApp.scrollSpy) {
+      TechKidsApp.scrollSpy.init();
+    }
 
-		$.getJSON('./data.json')
-			.then(data => {
-				const html = data.items.map(item => template
-					.replace(/%CATEGORY%/g, item.category)
-					.replace(/%LINK%/g, item.link)
-					.replace(/%TITLE%/g, item.title)
-					.replace(/%PREVIEW%/g, item.preview)
-					.replace(/%DESCRIPTION%/g, item.description)
-					.replace(/%PLATFORMS%/g, item.platforms
-						? item.platforms.map(platform => `<i class="fab fa-${platform}"></i>`).join('\n')
-						: ''
-					)
-				).join('\n')
+    $.getJSON('./data.json')
+      .then(data => {
+        const html = data.items.map(item => template
+          .replace(/%CATEGORY%/g, item.category)
+          .replace(/%LINK%/g, item.link)
+          .replace(/%TITLE%/g, item.title)
+          .replace(/%PREVIEW%/g, item.preview)
+          .replace(/%DESCRIPTION%/g, item.description)
+          .replace(/%PLATFORMS%/g, item.platforms
+            ? item.platforms.map(platform => `<i class="fab fa-${platform}"></i>`).join('\n')
+            : ''
+          )
+        ).join('\n')
 
-				$('#works').html(html);
-			});
+        $('#works').html(html);
+      });
 
-		$('#works_container').on('click', '.works_tab', function (e) {
-			$('.works_tab').removeClass('active');
-			$(this).addClass('active');
+    $('#works_container').on('click', '.works_tab', function (e) {
+      $('.works_tab').removeClass('active');
+      $(this).addClass('active');
 
-			const category = $(this).attr('data-category');
-			console.log(category);
-			if (category === 'all') {
-				$('.works_item').removeClass('hide');
-			}
-			else {
-				$(`.works_item.category_${category}`).removeClass('hide');
-				$(`.works_item:not(.category_${category})`).addClass('hide');
-			}
-		});
-	}
+      const category = $(this).attr('data-category');
+      console.log(category);
+      if (category === 'all') {
+        $('.works_item').removeClass('hide');
+      }
+      else {
+        $(`.works_item.category_${category}`).removeClass('hide');
+        $(`.works_item:not(.category_${category})`).addClass('hide');
+      }
+    });
+  }
 
-	return {
-		init: init
-	}
+  return {
+    init: init
+  }
 
 }(jQuery));
 
@@ -60,9 +60,8 @@ const template = `<li class="row works_item category_%CATEGORY%">
                   </a>
                 </p>
               </div>
-						</li>
-						<hr>`;
+						</li>`;
 
 $(document).ready(function () {
-	TechKidsApp.init();
+  TechKidsApp.init();
 });
