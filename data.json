@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "title": "GotStats?",
+      "category": "app",
+      "link": "https://avavt.github.io/gotstats/",
+      "preview": "img/gotstats_preview.png",
+      "description": "<p>Analytic tool for <a href=\"http://online-go.com\" title=\"The best place to play Go online!\" target=\"_blank\">Online Go Server</a>. Provides interesting (I hope) statistics about a player on OGS.</p>"
+    },
+    {
       "title": "Phaeria's Mine",
       "category": "game",
       "link": "https://avavt.itch.io/phaerias-mine",
@@ -66,13 +73,6 @@
         "apple",
         "chrome"
       ]
-    },
-    {
-      "title": "g0t Stats?",
-      "category": "app",
-      "link": "http://avavt.github.io/g0tStats/",
-      "preview": "img/gotstats_preview.png",
-      "description": "<p>Analytic tool for <a href=\"http://online-go.com\" title=\"The best place to play Go online!\" target=\"_blank\">Online Go Server</a>. Provides interesting (I hope) statistics about a player on OGS.</p>"
     },
     {
       "title": "Apples of Eden",
