@@ -1,67 +1,74 @@
-var TechKidsApp = (function ($, undefined) {
-  var init = function () {
-    if (TechKidsApp.scrollSpy) {
-      TechKidsApp.scrollSpy.init();
-    }
+const init = async function () {
+  const response = await fetch("./data.json");
 
-    $.getJSON('./data.json')
-      .then(data => {
-        const html = data.items.map(item => template
-          .replace(/%CATEGORY%/g, item.category)
-          .replace(/%LINK%/g, item.link)
-          .replace(/%TITLE%/g, item.title)
-          .replace(/%PREVIEW%/g, item.preview)
-          .replace(/%DESCRIPTION%/g, item.description)
-          .replace(/%PLATFORMS%/g, item.platforms
-            ? item.platforms.map(platform => `<i class="fab fa-${platform}"></i>`).join('\n')
-            : ''
-          )
-        ).join('\n')
+  if (!response.ok) {
+    throw new Error(response.status);
+  }
 
-        $('#works').html(html);
-      });
+  const data = await response.json();
 
-    $('#works_container').on('click', '.works_tab', function (e) {
-      $('.works_tab').removeClass('active');
-      $(this).addClass('active');
+  const html = data.items
+    .map((item) =>
+      template
+        .replace(/%CATEGORY%/g, item.category)
+        .replace(/%LINK%/g, item.link)
+        .replace(/%TITLE%/g, item.title)
+        .replace(/%PREVIEW%/g, item.preview)
+        .replace(/%DESCRIPTION%/g, item.description)
+        .replace(
+          /%PLATFORMS%/g,
+          item.platforms
+            ? item.platforms
+                .map((platform) => `<i class="fab fa-${platform}"></i>`)
+                .join("\n")
+            : ""
+        )
+    )
+    .join("\n");
 
-      const category = $(this).attr('data-category');
-      console.log(category);
-      if (category === 'all') {
-        $('.works_item').removeClass('hide');
-      }
-      else {
-        $(`.works_item.category_${category}`).removeClass('hide');
-        $(`.works_item:not(.category_${category})`).addClass('hide');
+  document.getElementById("works").innerHTML = html;
+  
+
+  const tabs = document.querySelectorAll("#works_container .works_tab");
+  for (const tab of tabs) {
+    tab.addEventListener("click", () => {
+      tabs.forEach((t) => t.classList.remove("active"));
+      tab.classList.add("active");
+
+      const category = tab.getAttribute("data-category");
+
+      document
+        .querySelectorAll(".works_item")
+        .forEach((i) => i.classList.remove("hide"));
+
+      if (category !== "all") {
+        document
+          .querySelectorAll(`.works_item:not(.category_${category})`)
+          .forEach((i) => i.classList.add("hide"));
       }
     });
   }
+};
 
-  return {
-    init: init
-  }
+const template = `
+<li class="works_item category_%CATEGORY%">
+  <div>
+    <a href="%LINK%" title="%TITLE%" target="_blank" class="work_thumbnail rounded-md block w-full h-[340px] overflow-hidden">
+      <div class="w-full h-full bg-cover bg-center" style="background-image: url('%PREVIEW%');"></div>
+    </a>
+  </div>
+  <div>
+  <div class="flex mb-2 justify-between items-center">
+    <h3 class="text-xl">
+      <a href="%LINK%" title="%TITLE%" target="_blank">%TITLE%</a>
+    </h3>
+    <a href="%LINK%" title="%TITLE%" target="_blank" class="text-xs">
+        %PLATFORMS%
+      </a>
+    </div>
+    %DESCRIPTION%
+  </div>
+</li>
+`;
 
-}(jQuery));
-
-const template = `<li class="row works_item category_%CATEGORY%">
-              <div class="col-sm-4">
-                <a href="%LINK%" title="%TITLE%" target="_blank" class="work_thumbnail fade_scale">
-                  <img src="%PREVIEW%" />
-                </a>
-              </div>
-              <div class="col-sm-8 fade_left">
-                <h3>
-                  <a href="%LINK%" title="%TITLE%" target="_blank">%TITLE%</a>
-								</h3>
-								%DESCRIPTION%
-                <p>
-                  <a href="%LINK%" title="%TITLE%" target="_blank">
-                    %PLATFORMS%
-                  </a>
-                </p>
-              </div>
-						</li>`;
-
-$(document).ready(function () {
-  TechKidsApp.init();
-});
+window.addEventListener("load", () => init().catch((e) => console.error(e)));

@@ -5,121 +5,72 @@
   <title>AVAVT's Place</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-  <!-- CSS Libs -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
-    integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&subset=latin,latin-ext,vietnamese"
     rel="stylesheet" type="text/css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 
-  <!-- CSS #self -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/fadeIn.css">
 
-  <!-- JS Libs -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-    crossorigin="anonymous"></script>
-
-  <!-- JS #self -->
   <script src="js/core.js"></script>
-  <script src="js/scrollSpy.js"></script>
 </head>
 
-<body>
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <h1 class="fade_left">Hi, I'm Đức.</h1>
-        </div>
-      </div>
-    </div>
-  </header>
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <p>My full name is Tôn Hồng Đức, but most people call me by my alias VAT.</p>
-          <p>I'm a Vietnamese
-            <a href="https://en.wikipedia.org/wiki/Go_%28game%29" title="Go on Wikipedia" target="_blank">Go</a>
-            player, indie game developer and programming instructor.</p>
-          <p>I've been doing programming works since 2008 with specialization in visualization, animations and
-            simulations. You can see some of my recent works below.</p>
-          <p>I also answer
-            <a href="http://stackoverflow.com/users/1645830/av-avt" title="AVAVT profile on Stackoverflow"
-              target="_blank">Stackoverflow</a>
-            questions in my free time.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <div class="row">
-            <div class="col-sm-2">
-              <img class="avatar" alt="avatar" src="img/avatar.png" />
-            </div>
-            <div class="col-sm-10 contact_media">
-              <p>
-                <a href="mailto:itsavavt@gmail.com" title="Send email to itsavavt@gmail.com">itsavavt@gmail.com</a>
-              </p>
-              <p class="social">
-                <a href="http://stackoverflow.com/users/1645830/av-avt" title="AVAVT profile on Stackoverflow"
-                  target="_blank">
-                  <i class="fab fa-stack-overflow"></i>
-                  <span class="sr-only">Stackoverflow profile</span>
-                </a>
-                </a>
-                <a href="https://github.com/AVAVT?tab=repositories" title="AVAVT on GitHub" target="_blank">
-                  <i class="fab fa-github"></i>
-                  <span class="sr-only">GitHub profile</span>
-                </a>
-                <a href="https://vn.linkedin.com/in/duc-ton-hong" title="Linkedin - Duc Ton Hong" target="_blank">
-                  <i class="fab fa-linkedin"></i>
-                  <span class="sr-only">Linkedin profile</span>
-                </a>
-              </p>
+<body style="height: 100vh; overflow: hidden;">
+  <div class="flex flex-col landscape:flex-row h-[100vh]">
+    <div class="info relative flex-0 mb-2 landscape:mb-0 landscape:flex-[0_0_640px] landscape:mr-[2vw] flex">
+      <div
+        class="info_content flex-1 landscape:flex landscape:flex-col justify-center px-4 landscape:pl-8 landscape:pr-0 relative z-1">
+        <div class="pt-6 landscape:py-4 contact_media flex items-center">
+          <img alt="avatar" src="img/avatar.png" class="avatar block w-[96px] landscape:w-[128px] flex-0 mr-4" />
+          <div class="flex-1">
+            <h1 class="text-3xl">Hi, I'm Đức.</h1>
+            <div class="social ml-[3px] flex-1">
+              <a href="mailto:itsavavt@gmail.com" title="Send email to itsavavt@gmail.com">
+                <i class="fas fa-envelope-square"></i>
+              </a>
+              <a href="http://stackoverflow.com/users/1645830/av-avt" title="AVAVT profile on Stackoverflow"
+                target="_blank">
+                <i class="fab fa-stack-overflow"></i>
+                <span class="sr-only">Stackoverflow profile</span>
+              </a>
+              </a>
+              <a href="https://github.com/AVAVT?tab=repositories" title="AVAVT on GitHub" target="_blank">
+                <i class="fab fa-github"></i>
+                <span class="sr-only">GitHub profile</span>
+              </a>
+              <a href="https://vn.linkedin.com/in/duc-ton-hong" title="Linkedin - Duc Ton Hong" target="_blank">
+                <i class="fab fa-linkedin"></i>
+                <span class="sr-only">Linkedin profile</span>
+              </a>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <section>
-    <div id="works_container" class="container">
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-          <ul class="tabs">
-            <li class="works_tab active" data-category="all">All</li>
-            <li class="works_tab" data-category="archviz">Visualizations</li>
-            <li class="works_tab" data-category="game">Games</li>
-            <li class="works_tab" data-category="app">Applications & Web</li>
-          </ul>
-          <ul id="works" class="works">
-
-          </ul>
-
-          <p>For the full list of my past works, please see my
-            <a href="https://vn.linkedin.com/in/duc-ton-hong-6a207578" title="Linkedin - Duc Ton Hong"
-              target="_blank">Linkedin
-              profile.</a>
+        <section class="contact py-4 landscape:pb-[30vh]">
+          <p>My name is Tôn Hồng Đức, most people call me by my alias Vat.</p>
+          <p>I'm a Vietnamese programmer,
+            <a href="https://en.wikipedia.org/wiki/Go_%28game%29" title="Go on Wikipedia" target="_blank">Go</a>
+            player, and indie game developer.
           </p>
-
-        </div>
+          <p>I've been doing programming works since 2008, specialized in visualization, animations and
+            simulations across multiple platforms.</p>
+        </section>
       </div>
     </div>
-  </section>
-  <footer>
-  </footer>
+
+    <section id="works_container" class="flex-1 flex flex-col overflow-hidden">
+      <ul class="tabs landscape:text-2xl px-4 mt-4 mb-2 landscape:mt-16 landscape:mb-4 flex-0">
+        <li class="works_tab active" data-category="all">All</li>
+        <li class="works_tab" data-category="visualization">Visualizations</li>
+        <li class="works_tab" data-category="game">Games</li>
+        <li class="works_tab" data-category="app">Applications & Web</li>
+      </ul>
+      <ul id="works" class="works px-4 relative flex-1 overflow-scroll">
+
+      </ul>
+    </section>
+  </div>
 </body>
 
 </html>
