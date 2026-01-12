@@ -16,11 +16,11 @@
   <script src="js/core.js"></script>
 </head>
 
-<body style="height: 100vh; overflow: hidden;">
-  <div class="flex flex-col landscape:flex-row h-[100vh]">
-    <div class="info relative flex-0 mb-2 landscape:mb-0 landscape:flex-[0_0_640px] landscape:mr-[2vw] flex">
+<body class="landscape:h-[100vh] landscape:overflow-hidden">
+  <div class="flex flex-col landscape:flex-row landscape:h-[100vh]">
+    <div class="info relative flex-0 mb-[-4vh] landscape:mb-0 landscape:flex-[0_0_640px] landscape:mr-[2vw] flex">
       <div
-        class="info_content flex-1 landscape:flex landscape:flex-col justify-center px-4 landscape:pl-8 landscape:pr-0 relative z-1">
+        class="info_content pb-[3vh] flex-1 landscape:flex landscape:flex-col justify-center px-4 landscape:pb-0 landscape:pl-8 landscape:pr-0 relative z-1">
         <div class="pt-6 landscape:py-4 contact_media flex items-center">
           <img alt="avatar" src="img/avatar.png" class="avatar block w-[96px] landscape:w-[128px] flex-0 mr-4" />
           <div class="flex-1">
@@ -59,7 +59,7 @@
       </div>
     </div>
 
-    <section id="works_container" class="flex-1 flex flex-col overflow-hidden">
+    <section id="works_container" class="flex-1 flex flex-col overflow-hidden z-1">
       <ul class="tabs landscape:text-2xl px-4 mt-4 mb-2 landscape:mt-16 landscape:mb-4 flex-0">
         <li class="works_tab active" data-category="all">All</li>
         <li class="works_tab" data-category="visualization">Visualizations</li>
