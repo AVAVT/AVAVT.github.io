@@ -128,11 +128,13 @@ ul.works li h3 {
 .works_item.hide + hr {
   display: none !important;
 }
+
 .tabs {
   display: none;
 }
 
 .works_tab {
+  display: inline-block;
   padding: 0px 7px;
   margin: 0;
   cursor: pointer;
@@ -157,9 +159,8 @@ ul.works li h3 {
 
 @media (orientation: landscape) {
   .tabs {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: block;
+    text-align: center;
     padding: 5px 0 20px;
     list-style: none;
   }
