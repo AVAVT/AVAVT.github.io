@@ -53,7 +53,7 @@
     {
       "title": "GotStats?",
       "category": "app",
-      "link": "https://avavt.github.io/gotstats/",
+      "link": "https://avavt.github.io/gotstats/year-shared-review?data=sample",
       "preview": "img/gotstats_preview.png",
       "description": "<p>Analytic tool for <a href=\"http://online-go.com\" title=\"The best place to play Go online!\" target=\"_blank\">Online Go Server</a>. Provides statistics about a player on OGS.</p>",
       "platforms": ["chrome"]
