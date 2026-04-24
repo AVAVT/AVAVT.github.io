@@ -9,16 +9,12 @@
       "platforms": ["windows", "chrome"]
     },
     {
-      "title": "Seed.",
-      "category": "game",
-      "link": "https://avavt.itch.io/seed",
-      "preview": "img/seed.gif",
-      "description": "<p>A game about the relationship between plants and human.</p><p>My most cherished Ludum Dare jam entry.</p>",
-      "platforms": [
-        "windows",
-        "apple",
-        "chrome"
-      ]
+      "title": "GotStats?",
+      "category": "app",
+      "link": "https://avavt.github.io/gotstats/year-shared-review?data=sample",
+      "preview": "img/gotstats_preview.png",
+      "description": "<p>Analytic tool for <a href=\"http://online-go.com\" title=\"The best place to play Go online!\" target=\"_blank\">Online Go Server</a>. Provides statistics about a player on OGS.</p>",
+      "platforms": ["chrome"]
     },
     {
       "title": "Archery Progress",
@@ -40,6 +36,18 @@
       "platforms": ["chrome"]
     },
     {
+      "title": "Seed.",
+      "category": "game",
+      "link": "https://avavt.itch.io/seed",
+      "preview": "img/seed.gif",
+      "description": "<p>A game about the relationship between plants and human.</p><p>My most cherished Ludum Dare jam entry.</p>",
+      "platforms": [
+        "windows",
+        "apple",
+        "chrome"
+      ]
+    },
+    {
       "title": "House by the bay",
       "category": "visualization",
       "link": "https://drive.google.com/open?id=1elSx8_-iZOn-2yp97uwcGPGcInDsFK6S",
@@ -49,14 +57,6 @@
         "windows",
         "apple"
       ]
-    },
-    {
-      "title": "GotStats?",
-      "category": "app",
-      "link": "https://avavt.github.io/gotstats/year-shared-review?data=sample",
-      "preview": "img/gotstats_preview.png",
-      "description": "<p>Analytic tool for <a href=\"http://online-go.com\" title=\"The best place to play Go online!\" target=\"_blank\">Online Go Server</a>. Provides statistics about a player on OGS.</p>",
-      "platforms": ["chrome"]
     },
     {
       "title": "Nest Floormap",
